@@ -4,128 +4,248 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <link rel="stylesheet" href="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Inicio Navbar -->
-    <nav>
-      <div class="logo">
-        <img src="Imagenes/logo.png" alt="Logo" />
-        <span>GameMania</span>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(90deg, #880e4f, #4a148c)">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="Imagenes/logo.png" alt="Logo" />
+          <span>GameMania</span>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link text-white" href="blog.html">Inicio</a>
+            <a class="nav-link text-white" href="about_us.html">¿Quiénes somos?</a>
+            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+          </div>
+        </div>
       </div>
-      <ul>
-        <li><a href="blog.html">Inicio</a></li>
-        <li><a href="about_us.html">¿Quiénes somos?</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
     </nav>
     <!-- Final Navbar -->
-</head>
-<body>
-    <header>
-    <h1 class="titulo">GAMEMANIA</h1>
-    <h2>Tu portal definitivo para explorar la evolución de los videojuegos. Desde los clásicos arcade hasta las tendencias más actuales</h2>
-    </header>
 
-    <main>
-<div class="cards">
-    <div class="card">
-        <h2 class="subtitulosCard">Historia Épica</h2>
-        <p>Viaja desde los primeros Pong hasta las consolas de nueva generación. Descubre cómo evolucionaron los gráficos, el gameplay y las historias que marcaron generaciones de jugadores.</p>
-        <img src="Imagenes/card1.jpg" alt="imagenCard">
-        
-    </div>
+    <main class="container mt-4">
+      <div class="row">
+        <!-- Sidebar izquierda -->
+        <aside class="col-lg-2 d-none d-lg-block">
+          <!-- Vacío -->
+        </aside>
 
-    <div class="card">
-        <h2 class="subtitulosCard">Tendencias Actuales</h2>
-        <p>Mantente al día con las últimas tendencias gaming: desde el auge del battle royale hasta la revolución del streaming y los esports que están redefiniendo la industria.</p>
-        <img src="Imagenes/card2.jpg" alt="imagenCard">
+        <!-- Contenido principal -->
+        <section class="col-12 col-lg-8">
+          <header class="text-center mb-5">
+            <h1 class="titulo">GAMEMANIA</h1>
+            <h2>
+              Tu portal definitivo para explorar la evolución de los videojuegos. Desde los clásicos arcade hasta las
+              tendencias más actuales
+            </h2>
+          </header>
+          <div class="row g-4 mb-5">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="Imagenes/card1.jpg" class="card-img-top" alt="Historia Épica" />
+                <div class="card-body">
+                  <h5 class="card-title subtitulosCard">Historia Épica</h5>
+                  <p class="card-text">Viaja desde los primeros Pong hasta las consolas de nueva generación...</p>
+                </div>
+              </div>
+            </div>
 
-    </div>
-    <div class="card">
-        <h2 class="subtitulosCard">Análisis de Géneros</h2>
-        <p>Explora la evolución de cada género gaming: RPGs épicos, shooters revolucionarios, plataformas innovadoras y mucho más. Entiende qué hace único a cada estilo de juego.</p>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="Imagenes/card2.jpg" class="card-img-top" alt="Tendencias" />
+                <div class="card-body">
+                  <h5 class="card-title subtitulosCard">Tendencias Actuales</h5>
+                  <p class="card-text">Mantente al día con las últimas tendencias gaming...</p>
+                </div>
+              </div>
+            </div>
 
-        <img src="Imagenes/card3.jpg" alt="imagenCard">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="Imagenes/card3.jpg" class="card-img-top" alt="Géneros" />
+                <div class="card-body">
+                  <h5 class="card-title subtitulosCard">Análisis de Géneros</h5>
+                  <p class="card-text">Explora la evolución de cada género gaming...</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Sección Géneros -->
+          <div class="mb-5">
+            <h2 class="subtitulosMain text-center mb-4">Cada Género, Una Aventura Única</h2>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card4.jpg" class="card-img-top" alt="Acción y Aventura" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Acción y Aventura</h5>
+                    <p>Desde Tomb Raider hasta Assassin's Creed. Combate épico y mundos abiertos por descubrir.</p>
+                  </div>
+                </div>
+              </div>
 
-    </div>
-</div>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card5.jpg" class="card-img-top" alt="Rol y Mundos Masivos" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Rol y Mundos Masivos</h5>
+                    <p>Final Fantasy, World of Warcraft, The Witcher. Vive historias épicas en mundos fantásticos.</p>
+                  </div>
+                </div>
+              </div>
 
-<div class="generos">
-<h2 class="subtitulosMain">Cada Género, Una Aventura Única</h2>
-</div>
-<div class="cards">
-<div class="card">
-        <h3 class="subtitulosCard">Acción y Aventura</h3>
-        <p>Desde Tomb Raider hasta Assassin's Creed. Los juegos que combinan combate épico con narrativas inolvidables y mundos abiertos por descubrir.</p>
-        <img src="Imagenes/card4.jpg" alt="">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card6.jpg" class="card-img-top" alt="Shooters y Batalla Real" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Shooters y Batalla Real</h5>
+                    <p>
+                      Counter-Strike, Call of Duty, Fortnite. Evolución del shooter y batallas masivas de 100 jugadores.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-    </div>
-<div class="card">
-        <h3 class="subtitulosCard">Rol y Mundos Masivos</h3>
-        <p>Final Fantasy, World of Warcraft, The Witcher. Crea tu héroe, evoluciona tu personaje y vive historias épicas en mundos fantásticos sin límites.</p>
-        <img src="Imagenes/card5.jpg" alt="">
-</div>
-<div class="card">
-        <h3 class="subtitulosCard">Shooters y Batalla Real</h3>
-        <p>Counter-Strike, Call of Duty, Fortnite. La evolución del shooter desde los pasillos de Doom hasta las islas masivas de 100 jugadores.</p>
-        <img src="Imagenes/card6.jpg" alt="">
-</div>
-<div class="card">
-        <h3 class="subtitulosCard">Plataformas y Rompecabezas</h3>
-        <p>Mario, Sonic, Portal, Tetris. Los géneros que desafían tu destreza y tu mente, desde saltos perfectos hasta acertijos imposibles.</p>
-        <img src="Imagenes/card7.jpg" alt="">
-</div>
-<div class="card">
-        <h3 class="subtitulosCard">Simulación & Estrategia</h3>
-        <p>SimCity, Age of Empires, The Sims. Construye civilizaciones, administra ciudades y controla ejércitos en los géneros más cerebrales del gaming.</p>
-        <img src="Imagenes/card8.jpg" alt="">
-</div>
-<div class="card">
-        <h3 class="subtitulosCard">Indie & Experimentales</h3>
-        <p>Journey, Celeste, Hades. Los pequeños estudios que revolucionan el gaming con creatividad pura y experiencias únicas e innovadoras.</p>
-        <img src="Imagenes/card9.jpg" alt="">
-</div>
-</div>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card7.jpg" class="card-img-top" alt="Plataformas y Rompecabezas" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Plataformas y Rompecabezas</h5>
+                    <p>Mario, Sonic, Portal, Tetris. Desafía tu destreza y mente con saltos y acertijos imposibles.</p>
+                  </div>
+                </div>
+              </div>
 
-    <!-- ======= TENDENCIAS ACTUALES =========== -->
-     <div class="generos">
-        <h2 class="subtitulosMain">El Futuro del Gaming Está Aquí</h1>
-    </div>
-    <div class="cards">
-        <div class="card">
-            <h2 class="subtitulosCard">La Nueva Dimensión</h2>
-            <p>Meta Quest, PlayStation VR, Steam VR. Entra literalmente dentro de tus juegos favoritos y experimenta mundos virtuales como nunca antes.</p>
-            <img src="Imagenes/card11.jpg" alt="imagenCard">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card8.jpg" class="card-img-top" alt="Simulación & Estrategia" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Simulación & Estrategia</h5>
+                    <p>
+                      SimCity, Age of Empires, The Sims. Construye civilizaciones y controla ejércitos en géneros
+                      cerebrales.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-        </div>
-        <div class="card">
-            <h2 class="subtitulosCard">Gaming en Tu Bolsillo</h2>
-            <p>PUBG Mobile, Genshin Impact, Among Us. Los smartphones se convirtieron en consolas portátiles más potentes que las consolas de hace 10 años.</p>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card9.jpg" class="card-img-top" alt="Indie & Experimentales" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Indie & Experimentales</h5>
+                    <p>Journey, Celeste, Hades. Estudios pequeños que revolucionan el gaming con creatividad pura.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <img src="Imagenes/card12.jpg" alt="imagenCard">
+          <!-- ======= TENDENCIAS ACTUALES =========== -->
+          <!-- Sección Tendencias / Futuro del Gaming -->
+          <div class="mb-5">
+            <h2 class="subtitulosMain text-center mb-4">El Futuro del Gaming Está Aquí</h2>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card11.jpg" class="card-img-top" alt="La Nueva Dimensión" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">La Nueva Dimensión</h5>
+                    <p>Meta Quest, PlayStation VR, Steam VR. Experimenta mundos virtuales como nunca antes.</p>
+                  </div>
+                </div>
+              </div>
 
-        </div>
-        <div class="card">
-            <h2 class="subtitulosCard">Juega Desde Cualquier Lugar</h2>
-            <p>Xbox Game Pass, NVIDIA GeForce Now, Google Stadia. Tus juegos favoritos en cualquier dispositivo, sin descargas ni actualizaciones.</p>
-            <img src="Imagenes/card13.jpg" alt="imagenCard">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card12.jpg" class="card-img-top" alt="Gaming en tu Bolsillo" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Gaming en Tu Bolsillo</h5>
+                    <p>PUBG Mobile, Genshin Impact, Among Us. Consolas portátiles en tus manos.</p>
+                  </div>
+                </div>
+              </div>
 
-        </div>
-        <div class="card"> 
-            <h2 class="subtitulosCard">El Deporte del Siglo XXI</h2>
-            <p>League of Legends, Dota 2, Counter-Strike. Millones de espectadores, premios millonarios y jugadores profesionales que son verdaderas estrellas.</p>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card13.jpg" class="card-img-top" alt="Juega desde cualquier lugar" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">Juega Desde Cualquier Lugar</h5>
+                    <p>
+                      Xbox Game Pass, NVIDIA GeForce Now, Google Stadia. Tus juegos favoritos en cualquier dispositivo.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-            <img src="Imagenes/card14.jpg" alt="imagenCard">
-        </div>
-    </div>
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="Imagenes/card14.jpg" class="card-img-top" alt="El Deporte del Siglo XXI" />
+                  <div class="card-body">
+                    <h5 class="card-title subtitulosCard">El Deporte del Siglo XXI</h5>
+                    <p>
+                      League of Legends, Dota 2, Counter-Strike. Millones de espectadores y jugadores profesionales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-</div>
-</main>
+          <div class="row justify-content-center">
+            <div class="col-6">
+              <h1 class="mb-4">¡Bienvenido!</h1>
+              <p>
+                Este fragmento es de prueba creado con Bootstrap. A continuación hay contenido multimedia sobre
+                diferentes temas de interés.
+              </p>
 
-</body>
+              <img src="./Imagenes/games.jpg" class="img-fluid rounded mb-3" alt="Inmersión gamer" />
+
+              <!-- Documentación: https://getbootstrap.com/docs/5.3/helpers/ratio/ -->
+              <div class="ratio ratio-16x9 mb-3">
+                <video controls>
+                  <source src="./videos/video.mp4" type="video/mp4" />
+                  Tu navegador no soporta el elemento de video.
+                </video>
+              </div>
+
+              <div class="alert alert-info" role="alert">
+                ¡Bienvenido! Explora y descubre nuevo contenido cada semana 😀
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sidebar derecha -->
+        <aside class="col-lg-2 d-none d-lg-block">
+          <!-- Vacío -->
+        </aside>
+      </div>
+    </main>
+
     <footer>
       <div>
         <div>
@@ -162,6 +282,10 @@
         <div align="center">Copyright <strong>GameMania</strong> 2025 Generation Mexico.</div>
       </div>
     </footer>
-  
-  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
