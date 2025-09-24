@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Inicio Navbar -->
-    <nav>
-      <div class="logo">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(90deg, #880e4f, #4a148c)">
+  <div class="container-fluid">
+    <div class="logo">
         <img src="Imagenes/logo.png" alt="Logo" />
         <span>GameMania</span>
       </div>
-      <ul>
-        <li><a href="blog.html">Inicio</a></li>
-        <li><a href="about_us.html">¿Quiénes somos?</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link text-white" href="blog.html">Inicio</a>
+        <a class="nav-link text-white" href="about_us.html">¿Quiénes somos?</a>
+        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>
     <!-- Final Navbar -->
 
     <main>
@@ -191,5 +200,6 @@
         <div align="center">Copyright <strong>GameMania</strong> 2025 Generation Mexico.</div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
